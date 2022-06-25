@@ -1,0 +1,23 @@
+###
+GET http://localhost:5000/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3LCJuYW1lIjoiTmFtZSIsImVtYWlsIjoibmFtZUBnLXRlYS5hbSIsImlhdCI6MTY1NTk3NDc4OSwiZXhwIjoxNjU1OTc0ODA5fQ.pVVzaqH-ngQY6aGyutwB6WG_NwZP7pCdejZ-oLxXCmI
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Name",
+    "email": "name@g-tea.am",
+    "password": "123456",
+    "confPassword": "123456"
+} 
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "name@g-tea.am",
+    "password": "123456"
+}
